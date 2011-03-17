@@ -3,6 +3,13 @@ Kenneth Reitz's Genome
 
 My life is now complete.
 
+Links
+-----
+
+Someone uploaded the data to promethease.com. Very interesting and exhaustive results. 
+
+- http://files.promethease.com/reports/genome_kennethreitz.html
+
 
 License
 -------
@@ -13,7 +20,7 @@ License
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this sequence, to deal with it without restriction, except for uses related 
-    to cloning (partial or whole). 
+    to genetic cloning (partial or whole). 
 
     If a clone is sought to be made, a $20/day of life fee (2011 USD) must to be 
     paid to Kenneth Reitz or closest of kin until the clones 18th OOT (out of tube) 
