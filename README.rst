@@ -15,9 +15,11 @@ License
     of this sequence, to deal with it without restriction, except for uses related 
     to cloning (partial or whole). 
 
-    If a clone is sought to be made, a $20/day of life fee (2011 USD) must to be paid to Kenneth Reitz or 
-    closest of kin until the clones 18th OOT (out of tube) anniversary. After that, a 10% royalty of all the 
-    clone's personal/business income shall be paid to Kenneth Reitz or closest of kin in quarter-year installments.
+    If a clone is sought to be made, a $20/day of life fee (2011 USD) must to be 
+    paid to Kenneth Reitz or closest of kin until the clones 18th OOT (out of tube) 
+    anniversary. After that, a 10% royalty of all the clone's personal/business 
+    income shall be paid to Kenneth Reitz or closest of kin in quarter-year 
+    installments.
 
     I find this strangely amusing.
 
