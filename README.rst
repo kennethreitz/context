@@ -6,9 +6,10 @@ My life is now complete.
 Links
 -----
 
-Someone uploaded the data to promethease.com. Very interesting and exhaustive results. 
+An interactive HTML Promethease report is available for this data. I paid $5 for it. 
 
-- https://promethease-ondemand.s3.amazonaws.com/view/v1466967890-4dfd5ffd-10ea-43e4-934f-79322b448cae/promethease.html?Signature=KsSK14bsz%2FGGblPm%2B4BAsiG6QxI%3D&Expires=1470855890&AWSAccessKeyId=AKIAJVY3LXRWRTGUOJBQ
+- http://media.kennethreitz.com.s3.amazonaws.com/genome/promethease.html
+
 
 
 License
