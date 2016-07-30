@@ -3,13 +3,14 @@ Kenneth Reitz's Genome
 
 My life is now complete.
 
-Links
------
+Interactive Report
+------------------
 
 An interactive HTML Promethease report is available for this data. I paid $5 for it. 
 
 - http://media.kennethreitz.com.s3.amazonaws.com/genome/promethease.html
 
+The raw data provided in this repo was provided by 23andme.
 
 
 License
