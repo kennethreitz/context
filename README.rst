@@ -8,7 +8,7 @@ Links
 
 Someone uploaded the data to promethease.com. Very interesting and exhaustive results. 
 
-- http://files.promethease.com/reports/genome_kennethreitz.html
+- https://promethease-ondemand.s3.amazonaws.com/view/v1466967890-4dfd5ffd-10ea-43e4-934f-79322b448cae/promethease.html?Signature=KsSK14bsz%2FGGblPm%2B4BAsiG6QxI%3D&Expires=1470855890&AWSAccessKeyId=AKIAJVY3LXRWRTGUOJBQ
 
 
 License
