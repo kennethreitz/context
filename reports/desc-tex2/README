@@ -1,0 +1,41 @@
+desc-txt is a program to generate Descendent tree's in TeX.
+Written by Eric Majani, modified by Pete Glassernbury, Jim Eggert
+and D. Roegel.
+
+Here is a short description of the files contained in this directory:
+
+README        -> this file
+desc-tex.ll   -> version 1 of desc-tex
+desc-tex2.ll  -> version 2 of desc-tex
+drsetup.tex   -> general personnalisation TeX macros 
+                  (don't change this file; change mysetup.tex)
+drtree.tex    -> modified tree macros for desc-tex2 
+ex1.tex       -> an example showing how to merge two or more
+                 trees ``by hand'' and using invisible nodes.
+extree1.tex   -> Source of previous file. 
+extree2.tex   -> Source of previous file.
+mysetup.tex   -> Personal setup: feel free to modify this file.
+poster.doc    -> source documentation of the poster macros
+poster.tex    -> Tim Van Zandt's poster macros
+poster1.tex   -> other poster macros
+poster2.tex   -> other poster macros
+pstricks.con  -> pstricks configuration file (you normally
+                   don't need to change it)
+pstricks.pro  -> prologue file for dvips
+                   (needs to be put where dvips can find it)
+pstricks.tex  -> Tim Van Zandt's pstricks macros.
+setup.tex     -> some TeX macros used by version 1 of desc-tex
+tree.tex      -> original tree macros for version 1 of desc-tex
+
+--------------------------------------------------------------------------
+How to make it work ?
+
+  - call the desc-tex2 report from Lifelines
+  - answer the questions
+  - generate a file <something>.tex
+  - apply TeX (not LaTeX) to this file
+  - preview it with xdvi or an other previewer
+  - generate PostScript with dvips
+
+--------------------------------------------------------------------------
+

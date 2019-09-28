@@ -1,0 +1,65 @@
+/*
+ * @progname       st_string_UTF-8.li
+ * @version        1.1
+ * @author         Perry Rapp
+ * @category       self-test
+ * @output         none
+ * @description    validate string functions on UTF-8
+*/
+
+char_encoding("UTF-8")
+
+require("lifelines-reports.version:1.3")
+option("explicitvars") /* Disallow use of undefined variables */
+include("st_aux")
+
+/* entry point in case not invoked via st_all.ll */
+proc main()
+{
+	call testStrings_UTF_8()
+}
+
+/*
+ test some string functions against defined & undefined strings
+  */
+proc testStrings_UTF_8()
+{
+	call initSubsection()
+
+	call testBothWays_UTF_8("ä", "Ä", "adia") /* u+00E4, u+00C4 */
+	call testBothWays_UTF_8("ö", "Ö", "odia") /* u+00F6, u+00D6 */
+	call testBothWays_UTF_8("æ", "Æ", "ae") /* u+00E6, u+00C6 */
+	call testBothWays_UTF_8("ǽ", "Ǽ", "ae_acute") /* u+01FD, u+01FC */
+	call testBothWays_UTF_8("ð", "Ð", "eth") /* u+00F0, u+00D0 */
+	call testBothWays_UTF_8("þ", "Þ", "thorn") /* u+00FE, u+00DE */
+	call testBothWays_UTF_8("ø", "Ø", "o_stroke") /* u+00F8, u+00D8 */
+	call testBothWays_UTF_8("œ", "Œ", "oe") /* u+0153, u+0152 */
+	call testBothWays_UTF_8("ł", "Ł", "l_stroke") /* u+0142, u+0141 */
+	call testBothWays_UTF_8("δ", "Δ", "delta") /* u+03B4, u+0394 */
+	call testBothWays_UTF_8("ш", "Ш", "Cyrillic_sha") /* u+0448, u+0428 */
+
+	/* special cases */
+/*
+   Special handling of Greek lower sigma is not implemented
+   Currently lifelines uses Unicode character properties
+   from UnicodeDataExcerpt.txt
+*/
+/*	call testBothWays_UTF_8("σας", "ΣΑΣ", "Greek sas") */
+
+	/* TODO: add German special case when implemented */
+
+	call reportSubsection("string UTF-8 tests")
+}
+
+proc testBothWays_UTF_8(slo, shi, sname)
+{
+	if (ne(upper(slo), shi)) {
+		call reportfail(concat("upper(", sname, ") FAILED"))
+	}
+	else { incr(testok) }
+
+	if (ne(lower(shi), slo)) {
+		call reportfail(concat("lower(", sname, ") FAILED"))
+	}
+	else { incr(testok) }
+}
