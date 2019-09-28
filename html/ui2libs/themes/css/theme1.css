@@ -1,0 +1,604 @@
+/* @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300); */
+/* @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css); */
+
+/* Components ====================================================================== */
+#main-tab
+{
+    /*margin-top: 70px;*/
+}
+#main-tab .st_views .st_view
+{
+    overflow-y: auto;
+}
+#main-tab .container.main
+{
+    margin-top: 0px;
+}
+.tab-contents
+{
+    margin-top: 120px;
+}
+.tab-contents .tab-content
+{
+    display: none;
+}
+.tab-contents .tab-content.first
+{
+    display: block;
+}
+
+.dbsnp {
+    word-wrap: break-word;
+}
+
+.btn-primary {
+    background: #2196F3;
+    color: #fff;
+    border-color: #2196F3
+}
+
+.genoimage {
+    margin: 0 auto 15px;
+}
+
+.boxlink {
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+.boxeffect, .gsboxeffect {
+    word-break:normal;
+    word-wrap: break-word;
+    color: #666;
+}
+
+.boxeffect b, .gsboxeffect b {
+    color: #333;
+}
+
+.rstext {
+    word-break:normal;
+    word-wrap: break-word;
+    color: #000;
+    margin-top: 10px;
+    background: #E3E3E3;
+    padding: 10px;
+}
+
+.counselorwarning {
+    word-break:normal;
+    word-wrap: break-word;
+    color: #000;
+    margin-top: 10px;
+    background: #E3C0C0;
+    padding: 10px;
+}
+
+.mgcbox {
+    word-break:normal;
+    word-wrap: break-word;
+    color: #000;
+    margin-top: 10px;
+    background: #f7ef9b;
+    padding: 10px;
+}
+
+.inline {
+    display: inline;
+}
+
+.mgcbox .link-button {
+  background: none;
+  border: none;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 0;
+}
+.mgcbox .link-button:focus {
+  outline: none;
+}
+.mgcbox .link-button:active {
+  color:red;
+}
+
+#tags {
+    margin-top: 15px;
+}
+
+#tags > label {
+    font-size: 9px;
+}
+
+.label {
+    background: #fff;
+    color: #666;
+}
+.label-info {
+    background: #fff;
+    color: #666;
+}
+
+.clinvar_link.label-info {
+    background: #EEE;
+    color: #666;
+    font-size: 13px;
+}
+
+
+.sliderbutton {
+    float:left;
+}
+
+.aside-btn-xs {
+    margin-bottom: 1em;
+}
+
+#controls .btn-group .btn-default {
+    background: none;
+    box-shadow: none
+}
+
+#controls .btn-group .btn-default.btn-primary {
+    background: #2196F3;
+    border-color: #2196F3;
+    text-shadow: none;
+}
+
+#controls .btn-group .btn-default:focus {
+    outline-style: none
+}
+
+.ui-slider-horizontal {
+    /*width: 60px;*/
+    width: 105px;
+    float: left;
+    margin: 5px 16px;
+}
+
+.ui-widget-header {
+    background: #31b0d5;
+}
+
+#filters .btn-group {
+    margin-bottom: 10px;
+}
+
+#pie_div {
+    width: 300px;
+    height: 200px;
+    margin: 0 auto
+}
+
+#maxitems {
+    width: 100px;
+    margin-right: 5px;
+}
+
+/* this is probably obsolete by the one below, but hope to retro fix some reports */
+a.ui-slider-handle.ui-state-default.ui-corner-all {
+    font-size: 12px;
+    font-weight: normal;
+    height: auto;
+    cursor: pointer;
+}
+.ui-slider-handle.ui-state-default.ui-corner-all {
+    font-size: 12px;
+    font-weight: normal;
+    height: auto;
+    cursor: pointer;
+}
+
+#num_count {
+    width: 50px;
+}
+
+#num_missed {
+    width: 100px;
+}
+
+
+
+.clinvar-label .panel {
+    margin-bottom: 0;
+    padding: 5px;
+    margin-top: 10px;
+    line-height: 2;
+    word-break: break-all;
+}
+.clinvar-label .panel span.clinvar-label-info {
+    font-size: 13px;
+}
+
+#horizon {
+    color: white;
+    background-color: transparent;
+    text-align: left;
+    position: fixed;
+    top: 25%;
+    left: 0;
+    width: 100%;
+    overflow: visible;
+    visibility: visible;
+    display: block;
+    z-index: -10;
+}
+
+#content {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    visibility: visible;
+}
+
+#help {
+    position: relative;
+    border-radius: 15px;
+    width: 90%;
+    height: 350px;
+    background-color: #000000;
+    border: 5px red;
+    z-index: 1;
+    padding: 20px;
+    margin: 0 5%;
+    display: none;
+    color: white;
+}
+
+.controllabel {
+    width: auto;
+}
+
+.comparegenolabel {
+    word-wrap: break-word;
+    width: 180px;
+}
+
+.topnav {
+    position: fixed;
+    /*width: 100%;*/
+    top:0;
+    left: 0;
+    z-index: 5;
+}
+
+.container.main {
+    margin-top : 50px;
+}
+
+.navbar {
+    background-size: cover;
+    -webkit-background-size : cover;
+    border-radius: 0;
+    margin-bottom: 1.5em;
+    padding: 0 10px;
+}
+
+.navbar-header .search-query {
+    margin-bottom: 8px;
+    margin-top: 8px;
+    margin-right: 5px;
+}
+
+.navbar-default .navbar-collapse {
+    border: 0;
+}
+
+.navbar-toggle {
+    padding: 6px 12px;
+}
+
+.search-query {
+    margin: 0;
+}
+
+.navbar .btn-default {
+    background: #2196F3;
+    color: #fff;
+    text-shadow: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.navbar .btn-default:hover, .navbar .btn-default:focus {
+    outline: none;
+    background: #1976D2;
+}
+
+#btn-toggle-controls {
+    padding: 9px 12px;
+}
+
+#btn-toggle-controls.hide i.toggle-close, #btn-toggle-controls.show i.toggle-open {
+    display: block;
+}
+
+#btn-toggle-controls.hide i.toggle-open, #btn-toggle-controls.show i.toggle-close {
+    display: none;
+}
+
+#navbar .navbar-brand {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.ui-widget-header {
+    background: #2196F3;
+}
+
+#num_count {
+    width: 50px;
+}
+
+#num_missed {
+    width: 100px;
+}
+
+#filters .btn-group {
+    margin-bottom: 10px;
+}
+
+#filters .form-control {
+    padding: 5px 10px;
+    height: auto;
+    display: inline-block;
+}
+
+#pie_div {
+    width: 300px;
+    height: 200px;
+    margin: 0 auto
+}
+
+#maxitems {
+    width: 100px;
+    margin-right: 5px;
+}
+
+a.ui-slider-handle.ui-state-default.ui-corner-all {
+    font-size: 12px;
+    font-weight: normal;
+    height: auto;
+    cursor: pointer;
+}
+
+.boxmag {
+    margin-bottom: 10px;
+}
+
+/* Structure ====================================================================== */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.row {
+    margin-left: -15px;
+}
+
+.noRepute, .badRepute, .goodRepute, .badRepute_cb, .goodRepute_cb {
+    background: #f7f7f7;
+    padding: 1.5em;
+    margin-bottom: 1em;
+    border-radius: 3px;
+}
+
+.noRepute {
+    border-left: 8px solid #DADADA;
+    border-right: 2px solid #DADADA;
+    border-top: 2px solid #DADADA;
+    border-bottom: 2px solid #DADADA;
+}
+
+.badRepute {
+    border-left: 8px solid #FF9090;
+    border-right: 2px solid #FF9090;
+    border-top: 2px solid #FF9090;
+    border-bottom: 2px solid #FF9090;
+}
+
+.goodRepute {
+    border-left: 8px solid #60b060;
+    border-right: 2px solid #60b060;
+    border-top: 2px solid #60b060;
+    border-bottom: 2px solid #60b060;
+}
+
+.badRepute_cb {
+    border-left: 8px solid #f1a340;
+    border-right: 2px solid #f1a340;
+    border-top: 2px solid #f1a340;
+    border-bottom: 2px solid #f1a340;
+}
+
+.goodRepute_cb {
+    border-left: 8px solid #998ec3;
+    border-right: 2px solid #998ec3;
+    border-top: 2px solid #998ec3;
+    border-bottom: 2px solid #998ec3;
+}
+
+
+.noRepute:hover, .badRepute:hover, .goodRepute:hover, .badRepute_cb:hover, .goodRepute_cb:hover {
+    box-shadow: 0 1px 3px #bbb;
+}
+
+#controls {
+    padding: 1em;
+    background: #efefef;
+    left:auto !important;
+
+
+}
+
+.controls-wrapper {
+    position: relative;
+    margin: 15px;
+    width: auto;
+
+}
+
+table#table_pgx > tbody > tr td:nth-child(2){
+    width: 30%;
+}
+
+#footerBox {
+    margin-bottom: 2em;
+}
+
+.chosen-container {
+    width: 100% !important;
+}
+
+.introjs-helperLayer, .introjs-tooltipReferenceLayer, .introjs-tooltipReferenceLayer *
+{
+    box-sizing: content-box;
+}
+
+/* Media queries ====================================================================== */
+@media (max-width: 767px) {
+    .topnav .navbar-brand{
+        font-size: 90%;
+    }
+    .ui-slider-horizontal {
+        width: 85px;
+    }
+
+}
+@media (min-width: 768px) {
+
+    .navbar {
+        padding: 0;
+    }
+    .container.main {
+        margin-top: 70px;
+    }
+
+    .controls-wrapper {
+        position: absolute;
+        width: 33.33%;
+        top: 120px;
+        right: 15px;
+        left: auto;
+        border: 0;
+        font-size: .85em;
+        margin: 0;
+    }
+
+
+
+    .ui-slider-horizontal {
+        width: 105px;
+    }
+
+    #content {
+        width: 400px;
+        left: 50%;
+    }
+    #help {
+        left: -50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .controls-wrapper {
+        width: 33.33%;
+        font-size: 1em;
+        z-index: 10;
+    }
+
+    .ui-slider-horizontal {
+        width: 105px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .ui-slider-horizontal {
+        width: 105px;
+    }
+
+}
+
+@page {
+    size: Letter;
+}
+
+@media print {
+    [class*='introjs'] {
+        display: none;
+    }
+    .tab-contents {
+        margin-top: 0px;
+    }
+    .controls-wrapper {
+        display:none;
+    }
+    .container, .main {
+        margin-top: 0 !important;
+    }
+    .noRepute, .badRepute, .goodRepute, .badRepute_cb, .goodRepute_cb {
+        page-break-after:always;
+        width: 216mm;
+        height: 279mm;
+    }
+    .rstext {
+	opacity: 0.5;
+    }
+    .clinvar-label {
+	opacity: 0.5;
+    }
+    #footerBox {
+        display: none;
+    }
+}
+
+.ct-series-a .ct-bar {
+    stroke: #CD853F;
+    opacity: 0.2;
+}
+
+.ct-series-b .ct-bar {
+    stroke: #30FF30;
+    opacity: 0.2;
+}
+
+.ct-series-c .ct-bar {
+    stroke: #0000FF;
+    opacity: 0.2;
+}
+
+.ct-bar {
+    stroke-width: 7px;
+}
+
+.ct-series-a-active .ct-bar {
+#    stroke: #CD853F;
+    stroke: #000000;
+}
+
+.ct-series-b-active .ct-bar {
+#    stroke: #30FF30;
+    stroke: #000000;
+}
+
+.ct-series-c-active .ct-bar {
+#    stroke: #0000FF;
+    stroke: #000000;
+}
+
+/*-----------------Customize Populations Popup-------------------------------*/
+#lst_populations { list-style-type: none; margin: 0; padding: 0; /*width: 60%;*/ }
+#lst_populations li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; cursor: move; /*height: 1.5em;*/ }
+#lst_populations li > label{
+    margin-left: 5px;
+}
+.ui-state-highlight { height: 1.5em; line-height: 1.2em; }
+/*--------------------------------------------------------------------------*/

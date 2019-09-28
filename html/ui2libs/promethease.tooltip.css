@@ -1,0 +1,38 @@
+#tooltip.pretty {
+    font-family: Arial;
+    border: none;
+    width: 210px;
+    padding:20px;
+    height: 135px;
+    opacity: 0.8;
+    background: url('shadow.png');
+}
+#tooltip.pretty h3 {
+    margin-bottom: 0.75em;
+    font-size: 12pt;
+    width: 220px;
+    text-align: center;
+}
+#tooltip.pretty div { width: 220px; text-align: left; }
+
+#tooltip.fancy {
+    background: url('shadow2.png');
+    padding-top: 5em;
+    height: 70px;
+}
+#tooltip.fancy.viewport-right {
+    background: url('shadow2-reverse.png');
+}
+
+#extended { margin: 2em 0; }
+#extended label { text-decoration: underline; }
+#yahoo { width: 7em; }
+#right, #right2 { text-align: right; }
+#tooltip.right { width: 250px; }
+#fancy2 { float: right; }
+
+.controllabel { display: inline-block; width: 80px; }
+.ui-slider .ui-slider-handle { width: 30px; margin-left: -15px; }
+
+
+#genoslist label.controllabel { font-weight: normal; }

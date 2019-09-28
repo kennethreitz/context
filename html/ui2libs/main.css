@@ -1,0 +1,21 @@
+.chosen-container {
+    margin: 3px 0;
+}
+
+.tooltip.in {
+    opacity: 1;
+    z-index: 9999999;
+}
+
+.tooltip-inner {
+    font-size: 14px;
+    padding: 10px 7px;
+}
+
+.search-query {
+    margin: 5px;
+}
+
+@media print {
+    #controls { display:none !important;}
+}
